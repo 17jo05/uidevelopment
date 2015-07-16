@@ -1,0 +1,107 @@
+<!DOCTYPE HTML>
+<html lang="en-US">
+<head>
+	<meta charset="UTF-8">
+	<html lang="en-US">
+	<meta name="author" content="Jyoti" >
+	 
+	<title>Pictures</title>
+	<!-- external files -->
+		<script type="text/javascript" src = "script.js"></script>
+		<link  rel = "stylesheet" href="stylesheet.css">
+	<!-- internal style -->
+		<style type="text/css">
+				</style>
+		<script type="text/javascript">
+		</script>
+	
+</head>
+<body>
+<section>
+	<header>
+		<h1 align="center">View Images</h1>
+	</header>
+</section>
+	<div class="container">
+		<ul >
+			<li>Home</li>
+			<li>About Us</li>
+			<li>Contact Us</li>
+			<li>Gallery</li>
+			<li>Work</li>	
+		</ul> 
+				
+		<div id="side" align="right" >  
+			<select style="background-size: 40px; color: blue; background-color: #FFCC99;font-weight: bolder;">
+				<option>Picture1</option>
+				<option>Picture2</option>
+				<option>Picture3</option>
+				<option>Picture4</option><br>
+			</select>	
+		</div>
+	</div>	
+<section>
+<div id="myDiv"><h4>Web page Head Request</h5>
+	<button type = "button" onclick="httpresponse()">Click for Header Response</button><br><br>
+</div>
+
+</section>
+		
+	<div class="center">
+		<input type="button" name = "button1" onclick="myFunc()">Click to hide</button>
+		<img src="images/img1.jpg" height="30%" width="40%" id="Image1" alt="image-1">
+		
+		<input type="button" name = "button2" onclick="newFunc()">Click to hide</button>
+		<img src="images/img2.jpg" height="40%" width="40%" id = "Image2" alt = "image-2">
+		
+
+	</div>	
+
+
+<!-- function myFunc () {
+	var pic = document.getElementById("Image1");
+	pic.style.visibility =  "hidden"
+	
+};
+
+// AJAX function call 
+
+
+function httpresponse()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200) //
+    {
+    document.getElementById("myDiv").innerHTML ="ready state is : "+xmlhttp.readyState+ " status is: "+xmlhttp.status);
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+    else{
+    	document.getElementById("myDiv").innerHTML = "Waiting for Response...!"ready state is : "+xmlhttp.readyState+ " status is: "+xmlhttp.status);
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText);
+    }
+  }
+
+xmlhttp.open("GET","http://www.itu.edu",true);
+xmlhttp.send();
+}
+/*
+function showPic() {
+
+var sho = document.getElementById("Image2");
+	sho.style.visibility = "visible";
+//	sho..height = 20px;
+	}
+	*/-->
+		
+</body>
+</html>
